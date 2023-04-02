@@ -55,12 +55,12 @@ body{
   margin-top: 5%;
   background-color: #333131c7;
   gap : 5%;
-  /* display: none; */
+
 }
 
 .profile{
   flex : 30%;
-  /* border: 2px solid red; */
+
   padding-top: 2.5%;
 }
 .container .profile #profile-img
@@ -83,6 +83,3 @@ body{
 .user-info a{
   text-decoration: none;
 }
-/* #user-name{
-  font-size: 20px;
-} */
