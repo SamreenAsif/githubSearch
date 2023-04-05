@@ -60,22 +60,6 @@ export const SearchUser = () => {
         </button>
       </form>
 
-      {/* <div className="container">
-        {result.map((user) => {
-          <div className="profile" key={user.id}>
-            <img src="{user.avatar_url}" id="profile-img" alt="{user.login}" />
-          </div>;
-        })}
-      
-      <div className="user-info">
-      {result.map((user) => {
-        <p>
-          <label htmlFor="name">Name : </label> {user.login}
-        </p>
-          
-        })}
-        </div>
-      </div> */}
       {result.length > 0 && (
         <div>
           {result.map((user) => (
