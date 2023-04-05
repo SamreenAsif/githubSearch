@@ -28,11 +28,13 @@ export const SearchUser = () => {
           },
         }
       );
-      console.log("Response status:", response.status);
-      console.log("Response headers:", response.headers);
       const data = await response.json();
-      console.log("Response body:", data);
-      setResults(data.items);
+   
+      setResults((prev)=>[
+        ...prev,
+        ...data.items,
+      ]);
+
     } catch (error) {
       console.error("Error occurred while fetching data from API:", error);
     }
